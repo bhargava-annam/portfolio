@@ -498,4 +498,11 @@ nav .menu-btn{
     #skills{
         margin: 0px;
     }
+    .text{
+        display: none;
+    }
+    .recent-img:hover .image{
+        opacity: 1;
+    }
+    
 }
