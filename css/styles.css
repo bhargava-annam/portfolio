@@ -367,7 +367,7 @@ nav .menu-btn{
         justify-content: start;
     }
     .skill-text{
-        margin-top: -20%;
+        margin-top: -10%;
     }
     .skill-img{
         width: 800px;
@@ -458,7 +458,7 @@ nav .menu-btn{
         font-size: 1.5rem;
         font-weight: 400;
         position: absolute;
-        margin: 0px; 
+        margin-top: 150px; 
         left: 50%; 
         transform: translate(-50%,-50%);
     }
@@ -475,10 +475,11 @@ nav .menu-btn{
     }
     #skills{ 
         width:100%;
+        margin-top: 180px;
         /* justify-content: space-between;  */
     }
     .skill-text{
-        margin-top: -65%;
+        margin-top: -60%;
         width: 400px;
     }
     .skill-img{
@@ -513,7 +514,7 @@ nav .menu-btn{
         font-size: 1.5rem;
         font-weight: 400;
         position: absolute;
-        margin-top: 150px; 
+        margin-top: 600px; 
         left: 50%; 
         transform: translate(-50%,-50%);
     }
@@ -541,6 +542,9 @@ nav .menu-btn{
     .skill-img{
         display: none;
     }
+    .skill-text{
+        margin-top:1px;
+    }
 }
 @media(max-width:530px){
     
@@ -548,12 +552,13 @@ nav .menu-btn{
         width: 80%;
     }
     .main-text{
-        margin-top: 340px; 
+        margin-top: 900px; 
     }
     .skill-img{
         display: none;
     }
     .skill-text{
+        margin-top: 100px;
         width: 75%;
     }
     .recent-heading h3,
