@@ -38,13 +38,14 @@ nav{
 nav ul{
     display: flex;
 }
+
 nav ul li a{
     height: 40px;
     line-height: 43px;
     margin: 3px;
     padding: 0px 22px;
     display: flex;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     text-transform: uppercase;
     font-weight: 500;
     color:#585b5b;
@@ -68,8 +69,8 @@ nav ul li a:hover{
     object-fit: contain;
 }
 .model{
-    width: 500px;
-    height: 500px;
+    width: 800px;
+    height: 1200px;
 }
 .content{
     width: 90%;
@@ -80,20 +81,38 @@ nav ul li a:hover{
     left:50%;
     top:50%;
     transform: translate(-50%,-50%);
-
 }
 .main-text{
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #1c3548;
-    margin: 0px 0px 10px 0px;
-    line-height: 60px;
+    margin: 0px 0px 0px 0px;
+    line-height: 45px;
+    padding-left: 29px;
+    margin: 0px;
 
 }
-.main-text p{
-        font-size: .99rem;
+
+.media{
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+
 }
 
-.portfolio-btn,
+
+.portfolio-btn{
+    width: 100px;
+    height: 55px;
+    font-size: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    background-color: #1db096;
+    border-radius: 20px;
+    box-shadow: 4px 10px 30px rgba(24,139,119,0.2);
+
+}
 .recent-btn{
     width: 190px;
     height: 44px;
@@ -119,16 +138,20 @@ nav ul li a:hover{
     margin: auto auto auto auto; /* made a change here*/
 }
 .skill-text{
-    width: 400px;
+    /* width: 500px; */
+       
 }
 .skill-img{
-    width: 600px;
-    height: 300px;
+    width: 850px;
+    height: 500px;
 }
 .skill-img img{
     width: 100%;
     height: 100%;
     object-fit: contain;
+}
+.skill-heading{
+    padding-top: 82px;
 }
 .skill-heading span,
 .recent-heading span{
@@ -151,7 +174,7 @@ nav ul li a:hover{
 }
 .skill-box{
     display: flex;
-    margin: 25px 0px;
+    margin: 15px 0px;
 }
 .s-box-icon{
     margin-right: 12px;
@@ -169,12 +192,12 @@ nav ul li a:hover{
 .s-box-text strong{
     color: #1c3548;
     margin: 0px;
-    font-size: 0.9rem;
+    font-size: 1.5rem;
     font-weight: 600;
 }
 .s-box-text p{
     color: #747474;
-    font-size: 0.9rem;
+    font-size: 1.5rem;
 }
 .fa-html5{
     color: #e06061;
@@ -193,6 +216,7 @@ nav ul li a:hover{
     flex-direction: column;
 }
 .recent-heading{
+    padding-top: 83px;
     columns: #36b7b5;
     font-weight: 400;
     text-transform: uppercase;
@@ -211,9 +235,10 @@ nav ul li a:hover{
     display: block;
     margin: 0px 40px;   
 }
-/* w3schools */
+/* Image render */
 .recent-img {
     position: relative;
+    height: 600px;
   }
 .image {
     opacity: 1;
@@ -252,7 +277,7 @@ nav ul li a:hover{
     font-size: 16px;
     padding: 16px 32px;
   }
-/*  w3schools over*/
+/*  Image render over*/
 .recent-img img{
     width:100%;
     height: 100%;
@@ -274,7 +299,7 @@ nav ul li a:hover{
 
 }
 #contact img{
-    height:300px;
+    height:600px;
 }
 .contact-input{
     width: 400px;
@@ -323,21 +348,26 @@ nav .menu-btn{
 }
 @media(max-width:1140px){
     .content{
-        width: 100%;
+        width: 100%;       
     }
     .model{
-        width: 400px;
-        height: 400px; 
+        width: 500px;
+        height: 500px; 
     }
-    .main-text,.model{
-        margin: 10px;
+    .main-text {
+        font-size: 1.5rem;
     }
-    .main-text h1{
-        font-size: 3rem;
+    #skills{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+    .skill-text{
+        margin-top: -20%;
     }
     .skill-img{
-        width: 400px;
-        height: 400px;
+        width: 800px;
+        height: 600px;
     }
     
 }
@@ -419,17 +449,38 @@ nav .menu-btn{
     nav .menu-btn:checked ~ .menu{
         display: block;
     }
-    #skills{
+    .main-text{
+        width: 85%;
+        font-size: 1.5rem;
+        font-weight: 400;
+        position: absolute;
+        margin: 0px; 
+        left: 50%; 
+        transform: translate(-50%,-50%);
+    }
+    .model{
+        display: none;
+        /* margin-top: 55%;
+        width:400px;   
+        height: 360px;   */
+    }
+
+    .main-text p{
+        margin-top: -15px;
+        padding:0px ;
+    }
+    #skills{ 
         width:100%;
-        justify-content: space-between;
-        padding-left: 40px;
+        /* justify-content: space-between;  */
     }
     .skill-text{
+        margin-top: -65%;
         width: 400px;
     }
     .skill-img{
         width: 50%;
         height: 250px;
+        
     }
     .skill-img img{
         object-fit: cover;
@@ -448,14 +499,21 @@ nav .menu-btn{
 @media(max-width:720px){
     .model{
         display: none;
+        /* margin-top: 120%;
+        width:600px;   
+        height: 600px;   */
     }
+    
     .main-text{
-        width: 70%;
+        width: 85%;
+        font-size: 1.5rem;
+        font-weight: 400;
         position: absolute;
-        left: 50%;
-        top: 50%;
+        margin-top: 150px; 
+        left: 50%; 
         transform: translate(-50%,-50%);
     }
+    
     #contact img{
         height: 200px;
         width:85%;
@@ -481,8 +539,12 @@ nav .menu-btn{
     }
 }
 @media(max-width:530px){
+    
     .contact-input{
         width: 80%;
+    }
+    .main-text{
+        margin-top: 340px; 
     }
     .skill-img{
         display: none;
@@ -495,6 +557,7 @@ nav .menu-btn{
         font-size: 15px;
     }
     #skills{
+        padding:0px;
         margin: 0px;
     }
     .text{
