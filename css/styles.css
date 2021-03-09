@@ -69,8 +69,8 @@ nav ul li a:hover{
     object-fit: contain;
 }
 .model{
-    width: 800px;
-    height: 1200px;
+    width: 600px;
+    height: 1000px;
 }
 .content{
     width: 90%;
@@ -83,7 +83,8 @@ nav ul li a:hover{
     transform: translate(-50%,-50%);
 }
 .main-text{
-    font-size: 2rem;
+    padding-top: 30px;
+    font-size: 1.5rem;
     color: #1c3548;
     margin: 0px 0px 0px 0px;
     line-height: 45px;
@@ -91,6 +92,7 @@ nav ul li a:hover{
     margin: 0px;
 
 }
+
 
 .media{
     font-size: 1.5rem;
